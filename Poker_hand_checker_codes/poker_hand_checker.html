@@ -1,0 +1,193 @@
+<html>
+
+<head><title>Python Poker Hand Checker</title></head>
+
+<style>
+	.clubs .diamond .spades .hearts{
+        margin: 20px;
+    	}
+</style>
+
+<body>
+    <h1>Poker Hand Checker</h1>
+    <form method="post" action="http://192.168.2.175:8080/~pi/cgi-bin/poker_hand_checker.py">
+        <div id="board">
+            <div class="clubs">
+                <div class="card" style="display: inline">
+                    <label for="2c"><input id="2c" name="2c" value="1" type="checkbox"><img src="cards/2c.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="3c"><input id="3c" name="3c" value="1" type="checkbox"><img src="cards/3c.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="4c"><input id="4c" name="4c" value="1" type="checkbox"><img src="cards/4c.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="5c"><input id="5c" name="5c" value="1" type="checkbox"><img src="cards/5c.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="6c"><input id="6c" name="6c" value="1" type="checkbox"><img src="cards/6c.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="7c"><input id="7c" name="7c" value="1" type="checkbox"><img src="cards/7c.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="8c"><input id="8c" name="8c" value="1" type="checkbox"><img src="cards/8c.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="9c"><input id="9c" name="9c" value="1" type="checkbox"><img src="cards/9c.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="tc"><input id="tc" name="tc" value="1" type="checkbox"><img src="cards/tc.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="jc"><input id="jc" name="jc" value="1" type="checkbox"><img src="cards/jc.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="qc"><input id="qc" name="qc" value="1" type="checkbox"><img src="cards/qc.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="kc"><input id="kc" name="kc" value="1" type="checkbox"><img src="cards/kc.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="ac"><input id="ac" name="ac" value="1" type="checkbox"><img src="cards/ac.png" width="37" height="53" /></label>
+                </div>
+            </div>
+
+
+            <div class="diamond">
+                <div class="card" style="display: inline">
+                    <label for="2d"><input id="2d" name="2d" value="1" type="checkbox"><img src="cards/2d.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="3d"><input id="3d" name="3d" value="1" type="checkbox"><img src="cards/3d.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="4d"><input id="4d" name="4d" value="1" type="checkbox"><img src="cards/4d.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="5d"><input id="5d" name="5d" value="1" type="checkbox"><img src="cards/5d.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="6d"><input id="6d" name="6d" value="1" type="checkbox"><img src="cards/6d.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="7d"><input id="7d" name="7d" value="1" type="checkbox"><img src="cards/7d.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="8d"><input id="8d" name="8d" value="1" type="checkbox"><img src="cards/8d.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="9d"><input id="9d" name="9d" value="1" type="checkbox"><img src="cards/9d.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="td"><input id="td" name="td" value="1" type="checkbox"><img src="cards/td.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="jd"><input id="jd" name="jd" value="1" type="checkbox"><img src="cards/jd.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="qd"><input id="qd" name="qd" value="1" type="checkbox"><img src="cards/qd.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="kd"><input id="kd" name="kd" value="1" type="checkbox"><img src="cards/kd.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="ad"><input id="ad" name="ad" value="1" type="checkbox"><img src="cards/ad.png" width="37" height="53" /></label>
+                </div>
+            </div>
+
+
+            <div class="hearts">
+                <div class="card" style="display: inline">
+                    <label for="2h"><input id="2h" name="2h" value="1" type="checkbox"><img src="cards/2h.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="3h"><input id="3h" name="3h" value="1" type="checkbox"><img src="cards/3h.png" width="37" height="53" />
+                    </label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="4h"><input id="4h" name="4h" value="1" type="checkbox"><img src="cards/4h.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="5h"><input id="5h" name="5h" value="1" type="checkbox"><img src="cards/5h.png" width="37" height="53" />
+                    </label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="6h"><input id="6h" name="6h" value="1" type="checkbox"><img src="cards/6h.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="7h"><input id="7h" name="7h" value="1" type="checkbox"><img src="cards/7h.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="8h"><input id="8h" name="8h" value="1" type="checkbox"><img src="cards/8h.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="9h"><input id="9h" name="9h" value="1" type="checkbox"><img src="cards/9h.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="th"><input id="th" name="th" value="1" type="checkbox"><img src="cards/th.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="jh"><input id="jh" name="jh" value="1" type="checkbox"><img src="cards/jh.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="qh"><input id="qh" name="qh" value="1" type="checkbox"><img src="cards/qh.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="kh"><input id="kh" name="kh" value="1" type="checkbox"><img src="cards/kh.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="ah"><input id="ah" name="ah" value="1" type="checkbox"><img src="cards/ah.png" width="37" height="53" /></label>
+                </div>
+            </div>
+
+
+            <div class="spades">
+                <div class="card" style="display: inline">
+                    <label for="2s"><input id="2s" name="2s" value="1" type="checkbox"><img src="cards/2s.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="3s"><input id="3s" name="3s" value="1" type="checkbox"><img src="cards/3s.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="4s"><input id="4s" name="4s" value="1" type="checkbox"><img src="cards/4s.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="5s"><input id="5s" name="5s" value="1" type="checkbox"><img src="cards/5s.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="6s"><input id="6s" name="6s" value="1" type="checkbox"><img src="cards/6s.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="7s"><input id="7s" name="7s" value="1" type="checkbox"><img src="cards/7s.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="8s"><input id="8s" name="8s" value="1" type="checkbox"><img src="cards/8s.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="9s"><input id="9s" name="9s" value="1" type="checkbox"><img src="cards/9s.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="ts"><input id="ts" name="ts" value="1" type="checkbox"><img src="cards/ts.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="js"><input id="js" name="js" value="1" type="checkbox"><img src="cards/js.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="qs"><input id="qs" name="qs" value="1" type="checkbox"><img src="cards/qs.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="ks"><input id="ks" name="ks" value="1" type="checkbox"><img src="cards/ks.png" width="37" height="53" /></label>
+                </div>
+                <div class="card" style="display: inline">
+                    <label for="as"><input id="as" name="as" value="1" type="checkbox"><img src="cards/as.png" width="37" height="53" /></label>
+                </div>
+            </div>
+            <br>
+            <br>
+        <input type="submit" value="Check Poker Hand" />
+        <input type="reset" value="Clear" >
+    </form>
+</body>
+</html>
